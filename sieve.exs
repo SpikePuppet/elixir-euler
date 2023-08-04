@@ -18,6 +18,7 @@ defmodule Sieve do
   end
 end
 
-Sieve.prime(1_000_000)
+limit = 600851475143
+Sieve.prime(limit)
 |> Enum.sort()
 |> Enum.each(&IO.puts/1)
